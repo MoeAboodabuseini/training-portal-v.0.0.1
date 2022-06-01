@@ -132,7 +132,7 @@
                     @else
                         <div class="row d-grid justify-content-center align-items-center" style="height: 100%;">
                             <div class="col-md-12 col-xl-10" style="margin-top:35vh;width: 100% ">
-                                You Have an available Request!
+                                You Have a pending Request!
                             </div>
                         </div>
                     @endif

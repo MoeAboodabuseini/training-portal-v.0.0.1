@@ -355,7 +355,7 @@
     }
     function handleId() {
         id = document.querySelector('#user_id').value
-        fetch(`http://127.0.0.1:8000/api/isCompany/ahgdyuppppp/${id}`)
+        fetch(`http://127.0.0.1:8080/api/isCompany/ahgdyuppppp/${id}`)
             .then(response => response.json())
             .then(response => {
                 let isCompany = Number(response.data);

@@ -151,8 +151,8 @@ class AdSupervisorController extends Controller
         $supervisor = User::find($request->supervisor_id);
 
         // return $supervisor->hours;
-        if ( 12 - $supervisor->hours > 0) {
-            $supervisor->hours = $supervisor->hours + 0.5;
+        if (12 - (int)($supervisor->hours) > 0) {
+            $supervisor->hours = ($supervisor->hours + 0.5);
             $supervisor->save();
             $opportunity = Opportunity::find($request->opportunity_id);
             Agreed::create([
@@ -171,8 +171,8 @@ class AdSupervisorController extends Controller
 
 
             return redirect(route('assignSupervisorPage'));
-        }else {
-            Alert::error('Assign Supervisor','you cant assign Supervisor, Because he has exceeded the hour limit');
+        } else {
+            Alert::error('Assign Supervisor', 'you cant assign Supervisor, Because he has exceeded the hour limit');
             return back();
         }
         // return $request;

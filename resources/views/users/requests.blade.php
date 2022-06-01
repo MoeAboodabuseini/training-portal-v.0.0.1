@@ -77,7 +77,6 @@
                                     <th>Started at</th>
                                     <th>Data Send</th>
                                     <th>Status</th>
-                                    <th>Cancel</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -89,18 +88,7 @@
                                     <td>{{$item->notes?$item->notes:''}}</td>
                                     <td>{{$item->status?$item->status:''}}</td>
                                     <td>{{$item->created_at?$item->created_at:''}}</td>
-                                    <td>
-                                        <a href="{{route('edit_opp',$item->id)}}">
-                                            <button type="button" class="btn rounded-pill btn-label-info">Edit</button>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <form action="{{route('destroy_opp',$item->id)}}" method="post">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn rounded-pill btn-label-danger">Delete</button>
-                                        </form>
-                                    </td>
+                                    
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -111,7 +99,6 @@
                                     <th>Started at</th>
                                     <th>Data Send</th>
                                     <th>Status</th>
-                                    <th>Cancel</th>
                                 </tr>
                             </tfoot>
                         </table>
@@ -129,7 +116,7 @@
                                     <th>Started at</th>
                                     <th>Data Send</th>
                                     <th>Status</th>
-                                    <th>Cancel</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -142,18 +129,8 @@
                                     <td>{{$item->status?$item->status:''}}</td>
                                     <td>{{$item->created_at?$item->created_at:''}}</td>
 
-                                    <td>
-                                        <a href="{{route('edit_opp',$item->id)}}">
-                                            <button type="button" class="btn rounded-pill btn-label-info">Edit</button>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <form action="{{route('destroy_opp',$item->id)}}" method="post">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn rounded-pill btn-label-danger">Delete</button>
-                                        </form>
-                                    </td>
+                                  
+                                   
                                 </tr>
                                 @endforeach
 
@@ -168,7 +145,7 @@
                                     <th>Started at</th>
                                     <th>Data Send</th>
                                     <th>Status</th>
-                                    <th>Cancel</th>
+                                 
                                 </tr>
                             </tfoot>
                         </table>

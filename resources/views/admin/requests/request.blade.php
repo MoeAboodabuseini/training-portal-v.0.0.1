@@ -32,7 +32,7 @@
                     <tbody>
                         @foreach($requests as $request)
                         <tr>
-                        <td>{{$request->id}}</td>
+                        <td>{{$request->user->user_id}}</td>
                             <td>{{$request->opportunity->company->name}}</td>
                             <td>{{$request->user->name}}</td>
                             <td>{{$request->opportunity->name}}</td>

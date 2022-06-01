@@ -9,7 +9,6 @@
         <h4 class="fw-bold py-3 mb-4">
             <span class="text-muted fw-light">Manage Users /</span> View All Users
         </h4>
-        <a href="{{route('users.create')}}"> <button class="btn rounded-pill btn-dark mb-2">Create New User</button> </a>
 
         <!-- Ajax Sourced Server-side -->
         <div class="card" style="padding: 25px;">

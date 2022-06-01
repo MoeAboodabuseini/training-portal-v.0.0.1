@@ -140,11 +140,7 @@
                             <div data-i18n="Manage Users">Manage Users</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="{{route('users.create')}}" class="menu-link">
-                                    <div data-i18n="Create users">Create users</div>
-                                </a>
-                            </li>
+                            
                             <li class="menu-item">
                                 <a href="{{route('users.index')}}" class="menu-link">
                                     <div data-i18n="View All users">View All users</div>

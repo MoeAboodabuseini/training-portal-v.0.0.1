@@ -115,6 +115,6 @@ class UserController extends Controller
         $user->phone = $request->phone;
         $user->skills = $request->skills;
         $user->save();
-        return back();
+        return redirect("/show/opportunities");
     }
 }
