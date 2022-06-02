@@ -6,6 +6,8 @@ use App\Models\Requested;
 use Closure;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class isStudent
 {
@@ -18,24 +20,27 @@ class isStudent
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->role=='user'){
-            $requests =Requested::where('user_id',auth()->user()->id)
-            ->where('status',5)->get();
+        if (auth()->user()->role == 'user') {
+            $requests = Requested::where('user_id', auth()->user()->id)
+                ->where('status', 5)->get();
             // return($requests);
             // foreach (auth()->user()->requests as $value) {
-                if (count($requests)  >0) {
-                    $Reports_status = true;
-                }else{
-                    $Reports_status = false;
-                }
+            if (count($requests)  > 0) {
+                $Reports_status = true;
+            } else {
+                $Reports_status = false;
+            }
             // }
-            Session(['Reports_status'=>$Reports_status]);
-            // if ((int)(auth()->user()->hours) >= 120) {
+            Session(['Reports_status' => $Reports_status]);
+            if ((int)(auth()->user()->hours) >= 80) {
                 return $next($request);
-                // } else {
-                // abort(401);
-            // }
-        }else{
+            } else {
+                Alert::error('Error', 'You are not a qualified student');
+                auth()->logout();
+                return back();
+            }
+        } else {
+            auth()->logout();
             abort(401);
         }
     }
