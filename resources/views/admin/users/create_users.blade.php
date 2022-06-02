@@ -14,18 +14,18 @@
                          @error('name') <div style="color:red ;" id="floatingInputHelp" class="form-text">{{$message}}
                     </div>
                     @else
-                    <div id="floatingInputHelp" class="form-text">Try To Add New User</div>
+                    <div id="floatingInputHelp" class="form-text">Try To Add New student</div>
                     @enderror
                 </div>
             </div>
             <div class="card-body pb-0">
                 <div class="form-floating">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="User ID" aria-describedby="floatingInputHelp" name="user_id" />
-                    <label for="floatingInput">User ID</label>
+                    <input type="number" class="form-control" id="floatingInput" placeholder="student ID" aria-describedby="floatingInputHelp" name="user_id" />
+                    <label for="floatingInput">student ID</label>
                     @error('user_id')
                         <div style="color:red ;" id="floatingInputHelp" class="form-text">{{$message}}</div>
                         @else
-                        <div id="floatingInputHelp" class="form-text">Should be unique for each user</div>
+                        <div id="floatingInputHelp" class="form-text">Should be unique for each student</div>
                         @enderror
                 </div>
             </div>

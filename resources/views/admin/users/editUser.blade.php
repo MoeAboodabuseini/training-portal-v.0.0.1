@@ -10,16 +10,16 @@
                     <h5 class="card-header">Name</h5>
                     <div class="card-body pb-0">
                         <div class="form-floating">
-                            <input value="{{$user->name}}" type="text" class="form-control" id="floatingInput" placeholder="User Name" aria-describedby="floatingInputHelp" name="name" />
+                            <input value="{{$user->name}}" type="text" class="form-control" id="floatingInput" placeholder="student Name" aria-describedby="floatingInputHelp" name="name" />
                             <label for="floatingInput">Name</label>
-                            <div id="floatingInputHelp" class="form-text">Try To Add New User</div>
+                            <div id="floatingInputHelp" class="form-text">Try To Add New student</div>
                         </div>
                     </div>
                     <div class="card-body pb-0">
                         <div class="form-floating">
                             <input value="{{$user->user_id}}" type="number" class="form-control" id="floatingInput" placeholder="User ID" aria-describedby="floatingInputHelp" name="user_id" />
-                            <label for="floatingInput">User ID</label>
-                            <div id="floatingInputHelp" class="form-text">Should be unique for each user</div>
+                            <label for="floatingInput">student ID</label>
+                            <div id="floatingInputHelp" class="form-text">Should be unique for each student</div>
                         </div>
                     </div>
                     <div class="card-body pb-0">

@@ -19,7 +19,7 @@
                 <div class="card-body pb-0">
                     <div class="form-floating">
                         <input type="number" class="form-control" id="floatingInput" placeholder="Admin ID" aria-describedby="floatingInputHelp" name="user_id" />
-                        <label for="floatingInput">Admin ID</label>
+                        <label for="floatingInput">Department-Chief ID</label>
                         @error('user_id')
                         <div style="color:red ;" id="floatingInputHelp" class="form-text">{{$message}}</div>
                         @else

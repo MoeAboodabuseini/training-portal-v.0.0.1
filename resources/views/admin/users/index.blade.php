@@ -7,24 +7,24 @@
 
 
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Manage Users /</span> View All Users
+            <span class="text-muted fw-light">Manage Students /</span> View All Students
         </h4>
 
         <!-- Ajax Sourced Server-side -->
         <div class="card" style="padding: 25px;">
-            <h5 class="card-header">Users Table</h5>
+            <h5 class="card-header">Students Table</h5>
             @if(Session('user_deleted'))
             <div class="alert alert-danger alert-dismissible col-6" role="alert">
-                <h6 class="alert-heading d-flex align-items-center fw-bold mb-1">User Deleted!!</h6>
-                <p class="mb-0">Aww yeah, you successfully Deleted the user.</p>
+                <h6 class="alert-heading d-flex align-items-center fw-bold mb-1">Student Deleted!!</h6>
+                <p class="mb-0">oops, you successfully Deleted the student.</p>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                 </button>
 
             </div>
             @elseif(Session('user_updated'))
             <div class="alert alert-primary alert-dismissible" role="alert">
-                <h6 class="alert-heading d-flex align-items-center fw-bold mb-1">Edit User</h6>
-                <p class="mb-0">You successfully Edited the user.</p>
+                <h6 class="alert-heading d-flex align-items-center fw-bold mb-1">Edit student</h6>
+                <p class="mb-0">You successfully Edited the student.</p>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                 </button>
             </div>
