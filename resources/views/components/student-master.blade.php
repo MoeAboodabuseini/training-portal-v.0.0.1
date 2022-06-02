@@ -123,12 +123,12 @@
                 <li class="menu-item">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-user"></i>
-                        <div data-i18n="User Profile">  Profile</div>
+                        <div data-i18n="Profile">  Profile</div>
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
                             <a href="{{route('studentProfileShow')}}" class="menu-link">
-                                <div data-i18n="User Profile">Student Profile</div>
+                                <div data-i18n="students Profile">Student Profile</div>
                             </a>
                         </li>
 
