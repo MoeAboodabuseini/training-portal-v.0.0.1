@@ -118,17 +118,17 @@
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-user"></i>
-                            <div data-i18n="Manage Admins">Manage Admins</div>
+                            <div data-i18n="Manage Admins">Manage Department-Chief</div>
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
                                 <a href="{{route('admins.create')}}" class="menu-link">
-                                    <div data-i18n="Create Admins">Create Admins</div>
+                                    <div data-i18n="Create Admins">Create Department-Chief</div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a href="{{route('admins.index')}}" class="menu-link">
-                                    <div data-i18n="View All Admins">View All Admins</div>
+                                    <div data-i18n="View All Admins">View All Department-Chief</div>
                                 </a>
                             </li>
 
@@ -137,13 +137,13 @@
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-user"></i>
-                            <div data-i18n="Manage Users">Manage Users</div>
+                            <div data-i18n="Manage Users">Manage Students</div>
                         </a>
                         <ul class="menu-sub">
                             
                             <li class="menu-item">
                                 <a href="{{route('users.index')}}" class="menu-link">
-                                    <div data-i18n="View All users">View All users</div>
+                                    <div data-i18n="View All users">View All students</div>
                                 </a>
                             </li>
 

@@ -128,7 +128,7 @@
                     <ul class="menu-sub">
                         <li class="menu-item">
                             <a href="{{route('studentProfileShow')}}" class="menu-link">
-                                <div data-i18n="User Profile">User Profile</div>
+                                <div data-i18n="User Profile">Student Profile</div>
                             </a>
                         </li>
 

@@ -11,7 +11,7 @@
 
 
                 <h4 class="fw-bold py-3 mb-4">
-                    Welcome {{auth()->user()->name}} to admin Dashboard
+                    Welcome {{auth()->user()->name}} to Department-Chief Dashboard
                 </h4>
 
                 

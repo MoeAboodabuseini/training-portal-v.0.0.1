@@ -9,13 +9,13 @@
 
 
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Manage Admins /</span> View All Admins
+            <span class="text-muted fw-light">Manage Department-Chief /</span> View All Department-Chiefs
         </h4>
-        <a href="{{route('admins.create')}}"> <button class="btn rounded-pill btn-dark mb-2">Create New Admin</button> </a>
+        <a href="{{route('admins.create')}}"> <button class="btn rounded-pill btn-dark mb-2">Create New Department-Chief</button> </a>
 
         <!-- Ajax Sourced Server-side -->
         <div class="card" style="padding: 25px;">
-            <h5 class="card-header">Admin Table</h5>
+            <h5 class="card-header">Department-Chief Table</h5>
   
             <div class="card-datatable text-nowrap">
                 <table id="example" class="table table-striped" style="width:100%">
